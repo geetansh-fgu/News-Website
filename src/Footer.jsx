@@ -4,7 +4,7 @@ import news from './assets/news.svg';
 function Footer() {
   return (
     <>
-      <hr className="border-t border-gray-300 my-4" />
+      <hr className="border-t border-gray-400 my-4" />
       <footer className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
@@ -31,7 +31,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-100">
+        <div className="bg-gray-200">
           <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
             <p className="text-gray-500 text-sm text-center sm:text-left">© 2024 News Today --
               <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@FEE Project</a>

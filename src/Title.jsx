@@ -10,15 +10,12 @@ function Title() {
             font-family: "Lobster", sans-serif;
             font-weight: 400;
             text-align: center;
-            margin-bottom: 10px;
-            margin-top: 10px;
             font-style: normal;
           }
         `}
       </style>
-      <h1 className="text-4xl italic lobster-regular">News Today</h1>
-      <br />
-      <hr />
+      <h1 className="text-4xl italic lobster-regular p-4">News Today</h1>
+      <hr className='border-gray-400'/>
     </>
   );
 }
