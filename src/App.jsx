@@ -1,9 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Title from './Title';
 import News from './News';
+import SearchResults from './SearchResults';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/technology" element={<News category="technology" />} />
         <Route path="/health" element={<News category="health" />} />
         <Route path="/business" element={<News category="business" />} />
+        <Route path="/search/:query" element={<SearchResults />} />
       </Routes>
       <Footer />
     </Router>
