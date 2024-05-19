@@ -2,35 +2,34 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import NewsItem from './NewsItem';
 
-function SearchResults() {
+function SearchResults({ onLike, likedArticles }) {
   const { query } = useParams();
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     const fetchSearchResults = async () => {
-      try {
-        const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=ecfaf9eaaa8d40a5b5d769210f5ee616`);
-        const data = await response.json();
-        setArticles(data.articles);
-      } catch (error) {
-        console.error('Error fetching search results:', error);
-      }
+      const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=ecfaf9eaaa8d40a5b5d769210f5ee616`);
+      const data = await response.json();
+      setArticles(data.articles);
     };
 
     fetchSearchResults();
   }, [query]);
 
   return (
-    <div className="container mx-auto my-3 flex justify-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-        {articles.map((article, index) => (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-6">Search Results for "{query}"</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {articles.map((article) => (
           <NewsItem
-            key={index}
-            sourceName={article.source.name}
+            key={article.url}
             title={article.title}
             desc={article.description}
-            imageURL={article.urlToImage || "Image"}
+            imageURL={article.urlToImage}
             newsUrl={article.url}
+            sourceName={article.source.name}
+            onLike={() => onLike(article)}
+            isLiked={likedArticles.some((a) => a.url === article.url)}
           />
         ))}
       </div>

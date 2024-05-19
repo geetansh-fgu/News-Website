@@ -43,6 +43,7 @@ function Navbar() {
           <Link to="/technology" className="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 text-lg">Technology</Link>
           <Link to="/health" className="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 text-lg">Health</Link>
           <Link to="/business" className="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 text-lg">Business</Link>
+          <Link to="/liked" className="mr-5 hover:text-gray-900 hover:border-b-2 hover:border-blue-500 text-lg">Liked Articles</Link>
         </nav>
       </div>
     </header>

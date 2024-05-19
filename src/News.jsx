@@ -3,7 +3,7 @@ import NewsItem from "./NewsItem";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 function News(props) {
-  const { category } = props;
+  const { category, onLike, likedArticles } = props;
   const [articles, setArticles] = useState([]);
   const [totalResults, setTotalResults] = useState(0);
   const [page, setPage] = useState(1);
@@ -47,6 +47,8 @@ function News(props) {
               desc={element.description}
               imageURL={element.urlToImage || "Image"}
               newsUrl={element.url}
+              onLike={() => onLike(element)}
+              isLiked={likedArticles.some((a) => a.url === element.url)}
             />
           ))}
         </div>
