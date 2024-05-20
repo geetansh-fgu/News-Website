@@ -11,9 +11,13 @@ Currently, two official plugins are available:
 
 # Preview :-
 
-![Screenshot 2024-05-01 110704](https://github.com/geetansh-fgu/News-Website/assets/123066928/12265580-efd4-494e-862b-f628ee39d9c6)
+![Screenshot 2024-05-20 100643](https://github.com/geetansh-fgu/News-Website/assets/123066928/b6522c92-a3de-4e3b-9cfd-d951cc5a9314)
 
-![Screenshot 2024-05-01 110733](https://github.com/geetansh-fgu/News-Website/assets/123066928/f910f666-ee35-4cb4-99fa-effbeee92e8d)
+![Screenshot 2024-05-20 100750](https://github.com/geetansh-fgu/News-Website/assets/123066928/d7aa325c-a0bb-4f72-8627-1aeda363299c)
+
+![Screenshot 2024-05-20 100718](https://github.com/geetansh-fgu/News-Website/assets/123066928/10c324d3-f97a-48ab-9a11-1d94c1aa6d96)
+
+![Screenshot 2024-05-20 100813](https://github.com/geetansh-fgu/News-Website/assets/123066928/19558847-556a-4714-a9eb-5eec6e768022)
 
 ------
 
@@ -21,7 +25,7 @@ Currently, two official plugins are available:
 
 # Features :-
 
-Provides a clean and minimilistic interface to view news. It incorporates various news websites, blogs, etc. and display them in one place. It has various types of categories and provides the news in real-time using newsapi. It can also take you to the complete articles posted in just a click.
+Provides a clean and minimilistic interface to view news. It incorporates various news websites, blogs, etc. and display them in one place. It has various types of categories and provides the news in real-time using newsapi. It can also take you to the complete articles posted in just a click. You can also search for articles by typing in a word, and all relevant articles will be displayed. Articles can also be liked and stored in dedicated liked articles section in the navbar to access at any give time.
 
 -----
 
