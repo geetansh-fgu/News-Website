@@ -8,7 +8,7 @@ function SearchResults({ onLike, likedArticles }) {
 
   useEffect(() => {
     const fetchSearchResults = async () => {
-      const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=ecfaf9eaaa8d40a5b5d769210f5ee616`);
+      const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=0a2e1ba116764b8a8621a532a1149f49`);
       const data = await response.json();
       setArticles(data.articles);
     };
